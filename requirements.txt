@@ -5,5 +5,5 @@ matplotlib
 opencv-python
 scipy
 einops
-pytorch
+torch
 pillow
