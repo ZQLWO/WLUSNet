@@ -13,7 +13,7 @@ class WLUSNet(nn.Module):
         self.EDFF_11 = EDFF(64, 32)
         self.EDFF_12 = EDFF(32, 32)
         self.b40 = nn.Conv2d(256,128,1,1)
-        self.b4 = nn.Conv2d(32,2,1,1)
+        self.b4 = nn.Conv2d(32,classes,1,1)
     def forward(self,img):
         output00, output01, output1, output2, out = self.MC_CFP(img)
         hight_level_Feature = self.MC_SP(out)
