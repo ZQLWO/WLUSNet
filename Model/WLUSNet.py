@@ -3,6 +3,9 @@ BatchNorm2d = nn.BatchNorm2d
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import MC_CFP
+import MC_SP
+import EDFF
 class WLUSNet(nn.Module):
     def __init__(self,classes, block_1, block_2,backbone,downsample_factor, pretrained):
         super(WLUSNet, self).__init__()
